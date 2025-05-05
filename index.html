@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class= "container">
+        <form action="/index.html">
+            <h1>Age Calculator</h1>
+            <label for="birthDate">Enter your birth date:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            <br />
+            <div>
+                <label for="dateCur">Current Date:</label>
+                <input id="dateCur" type="date" name="dateCur" value="">
+            </div>
+            <button type="button" onclick="ageCalculate()"> Calculate </button>
+            <p id="endResult"></p>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
